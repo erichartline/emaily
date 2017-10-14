@@ -18,6 +18,9 @@ app.use(
   })
 );
 
+app.use(passport.initialize());
+app.use(passport.session());
+
 // pass in app to our authRoutes file
 require('./routes/authRoutes')(app);
 

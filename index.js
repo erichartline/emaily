@@ -22,8 +22,9 @@ app.use(
 app.use(passport.initialize())
 app.use(passport.session())
 
-// pass in app to our authRoutes file
+// pass in app to our routing files
 require("./routes/authRoutes")(app)
+require("./routes/billingRoutes")(app)
 
 const PORT = process.env.PORT || 5000
 app.listen(PORT)

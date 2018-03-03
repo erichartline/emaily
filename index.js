@@ -5,6 +5,7 @@ const passport = require("passport")
 const bodyParser = require("body-parser")
 const keys = require("./config/keys")
 require("./models/User")
+require("./models/Survey")
 // add passport after models to access schema
 require("./services/passport")
 
